@@ -83,6 +83,7 @@ To simplify examples, global CSS-classes are used.
 
 - [`MyButton` usage](https://github.com/mrac/decoupled-styling-css-modules/blob/master/src/app/app.tsx#L26)
 - [Styling API - contains also children styling API](https://github.com/mrac/decoupled-styling-css-modules/blob/master/src/app/app.css.d.ts#L9)
+- [Nested component's styling is customised using `__` markup in class-names into otherwise flat classes structure](https://github.com/mrac/decoupled-styling-css-modules/blob/master/src/app/app.css.ts#L24)
 
 #### Application-level - themes
 
