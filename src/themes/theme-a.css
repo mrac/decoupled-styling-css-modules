@@ -1,0 +1,16 @@
+.logo {
+  animation: animation infinite 0.7s linear;
+  height: 80px;
+}
+
+@keyframes animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,37 @@
+.root {
+  display: inline-flex;
+  position: relative;
+  box-sizing: border-box;
+}
+.root:disabled::after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  border-radius: 4px;
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.root:focus {
+  outline: none;
+}
+
+.rootStyle {
+  align-items: center;
+  border-radius: 4px;
+  font-family: sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  min-height: 50px;
+  min-width: 150px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+.content {
+  flex: 1 0 auto;
+  padding: 8px 15px;
+}

@@ -1,0 +1,48 @@
+.root {
+  text-align: center;
+}
+
+.logo {
+  animation: animation infinite 20s linear;
+  height: 80px;
+}
+
+.header {
+  background-color: #222;
+  padding: 20px;
+  color: white;
+}
+
+.title {
+  font-size: 1.5em;
+}
+
+.intro {
+  font-size: large;
+}
+
+.links a {
+  color: white;
+}
+.links a:visited {
+  color: white;
+}
+.links a:hover {
+  color: cyan;
+}
+
+.okButton__rootStyle {
+  background-color: #d0d0ff;
+}
+.okButton__rootPosition {
+  margin-left: -50%;
+}
+
+@keyframes animation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

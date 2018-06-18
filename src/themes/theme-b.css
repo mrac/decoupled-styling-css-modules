@@ -1,0 +1,18 @@
+.links a {
+  color: white;
+}
+.links a:visited {
+  color: white;
+}
+.links a:hover {
+  color: cyan;
+}
+.links a:first-child {
+  color: red;
+}
+.links a:last-child {
+  color: green;
+}
+
+.okButton__ {
+}
