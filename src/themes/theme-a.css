@@ -3,6 +3,11 @@
   height: 80px;
 }
 
+.title {
+  composes: title from "../app/app.css";
+  color: #5050ff;
+}
+
 @keyframes animation {
   0% {
     transform: scale(1);
