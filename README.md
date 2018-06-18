@@ -88,7 +88,7 @@ To simplify examples, global CSS-classes are used.
 
 - Themes based on `App` component default styling - [Theme A](https://github.com/mrac/decoupled-styling-css-modules/blob/master/src/themes/theme-a.css), [Theme B](https://github.com/mrac/decoupled-styling-css-modules/blob/master/src/themes/theme-b.css)
 - [Reset to component's default setting (ignore any mid-level component customisations)](https://github.com/mrac/decoupled-styling-css-modules/blob/master/src/themes/theme-b.css#L1)
-- [Any level of customisation is possible, it's just CSS](https://github.com/mrac/decoupled-styling-css-modules/blob/master/src/themes/theme-b.ts#L13)
+- [Any level of customisation is possible, it's just CSS](https://github.com/mrac/decoupled-styling-css-modules/blob/master/src/themes/theme-b.css#L13)
 - [Theme used](https://github.com/mrac/decoupled-styling/blob/master/src/index.tsx#L22)
 
 ### Customisation
