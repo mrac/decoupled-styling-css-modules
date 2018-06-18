@@ -6,9 +6,9 @@ export interface AppClasses {
   header?: string;
   title?: string;
   intro?: string;
+  okButton?: MyButtonClasses;
   animation?: string;
   links?: string;
-  okButton?: MyButtonClasses;
 }
 
 declare const defaultClasses: AppClasses;

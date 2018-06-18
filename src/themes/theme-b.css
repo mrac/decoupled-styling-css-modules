@@ -1,3 +1,6 @@
+.okButton__ {
+}
+
 .links a {
   color: white;
 }
@@ -12,7 +15,4 @@
 }
 .links a:last-child {
   color: green;
-}
-
-.okButton__ {
 }
