@@ -1,3 +1,29 @@
+/**
+ * Translates CSS-Modules generated flat CSS-classes object, into nested object.
+ *
+ * Example:
+ *
+ *  // myContainer.css
+ *  .myContainer__myButton__position {
+ *    width: 100%;
+ *  }
+ *
+ *  // is translated by CSS-modules into JavaScript object:
+ *  {
+ *    'myContainer__myButton__position': 'xyz'
+ *  }
+ *
+ *  // this function transforms it into:
+ *  {
+ *     myContainer: {
+ *       myButton: {
+ *         position: 'xyz'
+ *       }
+ *     }
+ *  }
+ *
+ */
+
 const NESTED_DELIMITER = /__/;
 
 export function nested<T>(classes: T) {
