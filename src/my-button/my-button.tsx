@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import myButtonClasses, { MyButtonClasses } from './my-button.css';
-import { nested } from '../nested';
+import { nested } from '../util/nested';
 
 interface MyButtonProps {
   classes?: MyButtonClasses;

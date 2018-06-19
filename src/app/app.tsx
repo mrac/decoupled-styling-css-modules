@@ -3,7 +3,7 @@ import * as React from 'react';
 import logo from './logo.svg';
 import appClasses, { AppClasses } from './app.css';
 import { MyButton } from '../my-button/my-button';
-import { nested } from '../nested';
+import { nested } from '../util/nested';
 
 export interface AppProps {
   classes?: AppClasses;
