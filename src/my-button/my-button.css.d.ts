@@ -5,5 +5,5 @@ export interface MyButtonClasses {
   content?: string;
 }
 
-declare const defaultClasses: MyButtonClasses;
-export default defaultClasses;
+declare const myButtonClasses: MyButtonClasses;
+export default myButtonClasses;

@@ -7,9 +7,8 @@ export interface AppClasses {
   title?: string;
   intro?: string;
   okButton?: MyButtonClasses;
-  animation?: string;
   links?: string;
 }
 
-declare const defaultClasses: AppClasses;
-export default defaultClasses;
+declare const appClasses: AppClasses;
+export default appClasses;

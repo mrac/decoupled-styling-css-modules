@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import defaultClasses, { MyButtonClasses } from './my-button.css';
+import myButtonClasses, { MyButtonClasses } from './my-button.css';
 import { nested } from '../nested';
 
 interface MyButtonProps {
@@ -12,7 +12,7 @@ interface MyButtonProps {
 }
 
 export function MyButton(props: MyButtonProps) {
-  const classes = nested<MyButtonClasses>({ ...defaultClasses, ...props.classes });
+  const classes = nested<MyButtonClasses>({ ...myButtonClasses, ...props.classes });
 
   return (
     <button

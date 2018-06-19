@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import logo from './logo.svg';
-import defaultClasses, { AppClasses } from './app.css';
+import appClasses, { AppClasses } from './app.css';
 import { MyButton } from '../my-button/my-button';
 import { nested } from '../nested';
 
@@ -11,7 +11,7 @@ export interface AppProps {
 
 export class App extends React.Component<AppProps> {
   public render() {
-    const classes = nested<AppClasses>({ ...defaultClasses, ...this.props.classes });
+    const classes = nested<AppClasses>({ ...appClasses, ...this.props.classes });
 
     return (
       <div className={classes.root}>
