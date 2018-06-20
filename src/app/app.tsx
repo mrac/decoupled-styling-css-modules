@@ -3,7 +3,7 @@ import * as React from 'react';
 import logo from './logo.svg';
 import appClasses, { AppClasses } from './app.css';
 import { MyButton } from '../my-button/my-button';
-import { nested } from '../util/nested';
+import { mergeStyles } from '../util/merge-styles';
 
 export interface AppProps {
   classes?: AppClasses;
@@ -11,7 +11,7 @@ export interface AppProps {
 
 export class App extends React.Component<AppProps> {
   public render() {
-    const classes = nested<AppClasses>({ ...appClasses, ...this.props.classes });
+    const classes = mergeStyles(appClasses, this.props.classes);
 
     return (
       <div className={classes.root}>

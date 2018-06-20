@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import myButtonClasses, { MyButtonClasses } from './my-button.css';
-import { nested } from '../util/nested';
+import { mergeStyles } from '../util/merge-styles';
 
 interface MyButtonProps {
   classes?: MyButtonClasses;
@@ -12,7 +12,7 @@ interface MyButtonProps {
 }
 
 export function MyButton(props: MyButtonProps) {
-  const classes = nested<MyButtonClasses>({ ...myButtonClasses, ...props.classes });
+  const classes = mergeStyles(myButtonClasses, props.classes);
 
   return (
     <button
