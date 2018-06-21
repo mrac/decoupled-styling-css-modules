@@ -28,7 +28,7 @@ import { mergeDeep } from './merge-deep';
 
 const NESTED_DELIMITER = /__/;
 
-export function mergeStyles<T>(target: T, source?: T): T {
+export function mergeClasses<T>(target: T, source?: T): T {
   target = nested(target);
   source = nested(source);
   return mergeDeep(target, source);

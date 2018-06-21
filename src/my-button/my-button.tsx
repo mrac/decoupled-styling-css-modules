@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import myButtonClasses, { MyButtonClasses } from './my-button.css';
-import { mergeStyles } from '../util/merge-styles';
+import { mergeClasses } from '../util/merge-classes';
 
 interface MyButtonProps {
   classes?: MyButtonClasses;
@@ -13,7 +13,7 @@ interface MyButtonProps {
 }
 
 export function MyButton(props: MyButtonProps) {
-  const classes = mergeStyles(myButtonClasses, props.classes);
+  const classes = mergeClasses(myButtonClasses, props.classes);
   const typeClass = props.type && classes.types![props.type];
 
   return (

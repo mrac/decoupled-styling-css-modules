@@ -1,10 +1,10 @@
-import { mergeStyles } from './merge-styles';
+import { mergeClasses } from './merge-classes';
 
 interface T {
   [prop: string]: any;
 }
 
-describe('merge-styles', () => {
+describe('merge-classes', () => {
   let target: T;
   let source: T;
 
@@ -12,7 +12,7 @@ describe('merge-styles', () => {
     target = { a: 'one', b: { bb: 'three', cc: 'four', dd: { ddd: 'five', eee: 'six' } } };
     source = { b: { dd: { ddd: 'seven' } } };
 
-    expect(mergeStyles(target, source)).toEqual({
+    expect(mergeClasses(target, source)).toEqual({
       a: 'one',
       b: { bb: 'three', cc: 'four', dd: { ddd: 'seven', eee: 'six' } }
     });
@@ -29,7 +29,7 @@ describe('merge-styles', () => {
     source = {
       b__dd__ddd: 'seven'
     };
-    expect(mergeStyles(target, source)).toEqual({
+    expect(mergeClasses(target, source)).toEqual({
       a: 'one',
       b: { bb: 'three', cc: 'four', dd: { ddd: 'seven', eee: 'six' } }
     });
