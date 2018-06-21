@@ -4,7 +4,7 @@
 }
 
 .title {
-  composes: title from "../app/app.css";
+  composes: title from '../app/app.css';
   color: #5050ff;
 }
 
