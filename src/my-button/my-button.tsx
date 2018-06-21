@@ -9,14 +9,16 @@ interface MyButtonProps {
   onClick?: (event: React.MouseEvent<HTMLElement>) => void;
   children?: any;
   label?: string;
+  type?: 'primary' | 'secondary';
 }
 
 export function MyButton(props: MyButtonProps) {
   const classes = mergeStyles(myButtonClasses, props.classes);
+  const typeClass = props.type && classes.types![props.type];
 
   return (
     <button
-      className={`${classes.root} ${classes.rootStyle} ${classes.rootPosition}`}
+      className={`${classes.root} ${classes.rootStyle} ${classes.rootPosition} ${typeClass}`}
       disabled={props.disabled}
       onClick={props.onClick}
     >

@@ -3,6 +3,10 @@ export interface MyButtonClasses {
   rootPosition?: string;
   rootStyle?: string;
   content?: string;
+  types?: {
+    primary?: string;
+    secondary?: string;
+  };
 }
 
 declare const myButtonClasses: MyButtonClasses;

@@ -22,7 +22,10 @@
 }
 
 .okButton__rootStyle {
-  background-color: #d0d0ff;
+  background-color: #a0a0ff;
+}
+.okButton__types__primary {
+  background-color: #a0a0d0;
 }
 .okButton__rootPosition {
   margin-left: -50%;
