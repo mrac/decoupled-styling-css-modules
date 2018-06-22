@@ -35,11 +35,12 @@ export function mergeClasses<T>(target: T, source?: T): T {
  */
 function nested<T>(classes: T): T {
   const newClasses: T = {} as T;
+  const delimiter = new RegExp(NESTED_DELIMITER);
 
   if (typeof classes === 'object') {
     Object.keys(classes).forEach(className => {
-      if (className.match(new RegExp(NESTED_DELIMITER))) {
-        const fragments = className.split(new RegExp(NESTED_DELIMITER));
+      if (className.match(delimiter)) {
+        const fragments = className.split(delimiter);
         let obj = newClasses;
 
         fragments.forEach((fragment: string, index: number) => {
